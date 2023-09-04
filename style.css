@@ -23,29 +23,36 @@ a {
 .nav-links {
   display: flex;
   width: 110px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .cover {
   display: flex;
   background-color: #fff;
   height: minmax(15rem, 75vb);
-  justify-content: center;
-  margin: 5% 0% 5% 0%;
+  justify-content: space-around;
+  padding: 75px;
+}
+.heading {
+  font-size: 7vw;
 }
 .grid {
+  border-top: 15px solid #6c63ff;
   background-color: #fff;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
 }
 .grid-item {
-  background-color: #6c63ff;
+  border-radius: 30px;
   width: 200px;
   height: 200px;
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .grid-item:hover {
-  scale: 1.05;
+  scale: 1.1;
 }
 .footer {
   background-color: #6c63ff;
